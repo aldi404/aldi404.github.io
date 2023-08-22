@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio</title>
+    <!-- Favicon-->
+
+    <link rel="icon" href="http://localhost:8000/image/logo.png">
+    <link rel="shortcut icon" href="http://localhost:8000/image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="http://localhost:8000/main_temp/css/styles.css" rel="stylesheet" />
+    <script src="http://localhost:8000/assets_portfolio/js.js"></script>
+
+    <style>
+        .left {
+            margin-top: 5%;
+            text-align: left
+        }
+
+        .left img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 12px solid rgba(92, 77, 66, 0.5);
+            outline: solid 12px rgba(92, 77, 66, 0.3);
+            position: relative;
+        }
+
+        .photo_responsive {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 12px solid rgba(92, 77, 66, 0.5);
+            outline: solid 12px rgba(92, 77, 66, 0.3);
+            position: relative;
+        }
+
+        .hallo {
+            background-color: #7EB5A6;
+            color: #ffffff;
+            width: 25%;
+            padding: 7px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .name {
+            font-size: 35px;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .web_dev {
+            font-size: 20px;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .bottom-left {
+            text-align: left;
+            font-size: 14px !important;
+            color: #ffffff;
+        }
+
+        .social-media ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .social-media li {
+            float: left;
+        }
+
+        .social-media li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .social-media li a:hover {
+            background-color: #111111;
+            border-radius: 5px;
+            color: #7EB5A6;
+        }
+
+        .photo-right {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <style>
+        .photo-about {
+            width: 100%;
+            height: 100%;
+        }
+
+        .photo-about img {
+            width: 80%;
+            height: 80%;
+        }
+
+        .about-me {
+            padding: 30px 20px;
+        }
+
+        .about_good_at ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .about_good_at li {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .about_good_at li p {
+            display: block;
+            text-align: center;
+            padding: 4px 16px;
+            border: 2px solid #E8D0B3;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .download-cv {
+            background-color: #7EB5A6;
+            border-radius: 15px;
+            color: #ffffff;
+            padding: 8px 16px;
+        }
+
+        .download-cv:hover {
+            opacity: 0.8;
+            color: #ffffff;
+        }
+    </style>
+    <style>
+        .container__projects_left {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 270px;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .container__projects_right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: left;
+            min-width: 270px;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .container__projects_right h5 {
+            color: #7EB5A6;
+        }
+
+        .container__projects_right p {
+            font-size: 16px;
+        }
+
+        .projects_images {
+            width: 450px;
+            height: 300px;
+        }
+
+        .projects_link {
+            background-color: #E8D0B3;
+            border-radius: 15px;
+            color: #ffffff;
+            padding: 8px 16px;
+        }
+
+        .projects_link:hover {
+            opacity: 0.8;
+            color: #ffffff;
+        }
+    </style>
+    <style>
+        .container__progressbars {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 270px;
+            width: 100%;
+            min-height: 300px;
+        }
+
+        .progressbar {
+            border: none;
+            position: relative;
+            width: 90px;
+            height: 90px;
+            margin: 1em;
+            transform: rotate(-90deg);
+        }
+
+        .progressbar__svg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .progressbar__svg-circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke-width: 10;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            stroke: #fff;
+            stroke-linecap: round;
+            transform: translate(5px, 5px);
+        }
+
+        .shadow-html {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-css {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-php {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-js {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-laravel {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-react {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .shadow-flutter {
+            filter: drop-shadow(0 0 2px #7EB5A6);
+        }
+
+        .circle-html {
+            animation: anim_circle-html 1s ease-in-out forwards;
+        }
+
+        .circle-css {
+            animation: anim_circle-css 1s ease-in-out forwards;
+        }
+
+        .circle-php {
+            animation: anim_circle-php 1s ease-in-out forwards;
+        }
+
+        .circle-js {
+            animation: anim_circle-js 1s ease-in-out forwards;
+        }
+
+        .circle-laravel {
+            animation: anim_circle-laravel 1s ease-in-out forwards;
+        }
+
+        .circle-flutter {
+            animation: anim_circle-flutter 1s ease-in-out forwards;
+        }
+
+        .circle-react {
+            animation: anim_circle-react 1s ease-in-out forwards;
+        }
+
+        .progressbar__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 0.25em 0.5em;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 0.25em;
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+        .progressbar__bottom_text {
+            transform: translate(-50%, -50%) rotate(90deg);
+            position: absolute;
+            top: 50%;
+            padding: 0.25em 0.5em;
+            margin-left: -15px
+        }
+
+        @keyframes anim_circle-php {
+            to {
+                stroke-dashoffset: 250;
+            }
+        }
+
+        @keyframes anim_circle-html {
+            to {
+                stroke-dashoffset: 230;
+            }
+        }
+
+        @keyframes anim_circle-css {
+            to {
+                stroke-dashoffset: 230;
+            }
+        }
+
+        @keyframes anim_circle-js {
+            to {
+                stroke-dashoffset: 260;
+            }
+        }
+
+        @keyframes anim_circle-laravel {
+            to {
+                stroke-dashoffset: 240;
+            }
+        }
+
+        @keyframes anim_circle-flutter {
+            to {
+                stroke-dashoffset: 230;
+            }
+        }
+
+        @keyframes anim_circle-react {
+            to {
+                stroke-dashoffset: 260;
+            }
+        }
+
+
+
+        .professional_skills-progress {
+            width: 100%;
+            max-width: 350px;
+            height: 6px;
+            background: #e1e4e8;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .professional_skills-progress .professional_skills-progressbar {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, #5c4d42, #7EB5A6 17%, #E8D0B3 34%, #7EB5A6 51%, #E8D0B3 68%, #E8D0B3 85%, #7EB5A6);
+            background-size: 300% 100%;
+            -webkit-animation: progress-animation 2s linear infinite;
+            animation: progress-animation 2s linear infinite;
+        }
+
+        @-webkit-keyframes progress-animation {
+            0% {
+                background-position: 100%;
+            }
+
+            100% {
+                background-position: 0;
+            }
+        }
+
+        @keyframes progress-animation {
+            0% {
+                background-position: 100%;
+            }
+
+            100% {
+                background-position: 0;
+            }
+        }
+    </style>
+    <style>
+        hr.divider2 {
+            height: 0.2rem;
+            max-width: 15rem;
+            margin: 1.5rem auto;
+            background-color: #E8D0B3;
+            opacity: 1;
+        }
+
+        #portfolio_image {
+            display: grid;
+            height: calc(100vh - 10px);
+            grid-template: repeat(6, 1fr)/repeat(6, 1fr);
+            grid-gap: 0.5em;
+        }
+
+        @media (max-width: 800px) {
+            #portfolio_image {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #portfolio_image>div {
+                width: 48%;
+                margin: 1%;
+            }
+        }
+
+        @media (max-width: 800px) and (max-width: 350px) {
+            #portfolio_image>div {
+                width: 98%;
+            }
+        }
+
+        #portfolio_image>div:nth-child(6n+1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        #portfolio_image>div:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        #portfolio_image>div:nth-child(4) {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        #portfolio_image>div>a {
+            opacity: 0;
+            position: absolute;
+            color: #fff;
+            background-color: rgba(92, 77, 66, 0.4);
+            font: bold 1em "Helvetica";
+            /* text-shadow: 0 -1px 5px #fff, -1px 0px 5px #fff, 0 1px 5px #fff, 1px 0px 5px #fff; */
+            padding: 2rem;
+            /* mix-blend-mode: difference; */
+            width: 100%;
+            height: 100%;
+            transition: all ease 1s;
+        }
+
+        #portfolio_image>div>img {
+            width: 100%;
+            min-height: 100%;
+            transition: all ease 1s;
+        }
+
+        #portfolio_image>div:hover img {
+            filter: blur(4px);
+        }
+
+        #portfolio_image>div:hover a {
+            opacity: 1;
+        }
+
+        #portfolio_image>div {
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #portfolio_image div,
+        #portfolio_image a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        [id^=lightbox-] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            opacity: 0;
+            transition: opacity 450ms ease-in-out;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+
+        [id^=lightbox-]:target {
+            opacity: 1;
+            pointer-events: inherit;
+        }
+
+        [id^=lightbox-]:target img {
+            filter: blur(0);
+        }
+
+        [id^=lightbox-] .content {
+            max-width: 90%;
+            position: relative;
+            color: #fff;
+        }
+
+        [id^=lightbox-] .content:hover>a.close {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+
+        [id^=lightbox-] .content:hover>.title {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+
+        [id^=lightbox-] .content:hover>.title::after {
+            opacity: 1;
+        }
+
+        [id^=lightbox-] .content>* {
+            transition: all 450ms ease-in-out;
+        }
+
+        [id^=lightbox-] .title {
+            display: block;
+            margin: 0;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(50%);
+            font-size: 14px;
+            opacity: 0;
+        }
+
+        [id^=lightbox-] .title::after {
+            content: " ";
+            background-color: rgba(0, 0, 0, 0.4);
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all 350ms ease-in-out 250ms;
+            opacity: 0;
+            transform-origin: bottom;
+            mix-blend-mode: soft-light;
+        }
+
+        [id^=lightbox-] img {
+            max-height: 60vh;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            filter: blur(50px);
+        }
+
+        [id^=lightbox-] a.close {
+            width: 2em;
+            height: 2em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0, 0);
+            opacity: 0;
+            transform-origin: right top;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        [id^=lightbox-] a.close::after {
+            content: "X";
+        }
+    </style>
+    <style>
+        #web {
+            display: block;
+        }
+
+        #responsive {
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            .menuu {
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                flex-direction: column-reverse;
+            }
+
+            .left {
+                margin-top: 15%;
+            }
+
+            #web {
+                display: none;
+            }
+
+            #responsive {
+                display: block;
+            }
+
+            .hallo {
+                width: 35%;
+            }
+
+            .photo-right img {
+                width: 250px;
+                height: 250px;
+            }
+
+            hr.divider-center {
+                height: 0.2rem;
+                max-width: 8rem;
+                margin: 1.5rem auto;
+                background-color: #E8D0B3;
+                opacity: 1;
+            }
+
+            hr.divider-center-light {
+                background-color: #fff;
+            }
+
+            .social-media ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            .social-media ul li {
+                display: list-item;
+            }
+
+            .about-me {
+                text-align: center;
+            }
+
+            .responsive_about_good_at ul {
+                list-style-type: none;
+                margin: auto;
+                padding: 1em;
+                overflow: hidden;
+            }
+
+            .ul_responsive {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .responsive_about_good_at li {
+                padding-right: 10px;
+                float: left;
+            }
+
+            .responsive_about_good_at li p {
+                display: block;
+                text-align: center;
+                padding: 4px 16px;
+                border: 2px solid #E8D0B3;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+
+            .container__projects_right_responsive {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                min-width: 270px;
+                width: 100%;
+                min-height: 300px;
+            }
+
+            .container__projects_right_responsive h5 {
+                color: #7EB5A6;
+                margin-bottom: 2em;
+            }
+
+            .container__projects_right_responsive p {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 578px) {
+
+            #web {
+                display: block;
+            }
+
+            #responsive {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            .photo-right img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        /*  @media (min-width: 992px) {
+
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1320px;
+        }
+    } */
+    </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+</head>
+
+<body id="page-top" onload="myFunction()">
+    <!-- Navigation-->
+
+    <div class="loading" id="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+
+    <div id="myDiv" class="animate-bottom">
+        <div class="container">
+            <div class="top-layer"></div>
+            <div class="top-layer top-layer--2"></div>
+            <div class="top-layer top-layer--3"></div>
+            <div class="top-layer top-layer--4"></div>
+            <div class="top-layer top-layer--5"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a href="#" class="navbar-brand">Portfolio</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <div id="web">
+                <div class="container px-4 px-lg-5 h-100">
+                    <div class="menuu row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                        <div class="col-lg-12">
+                            <p class="hallo">Halo, We are</p>
+                        </div>
+                        <div class="col-lg-6 align-self-baseline">
+                            <div class="left">
+                                <img class="photo" src="http://localhost:8000/image/me2.jpg" alt="">
+                                <h1 class="name">Al Muhtadi Billah</h1>
+                                <p class="web_dev">Web Developer</p>
+                                <hr class="divider" />
+                                <br><br>
+                                <p class="bottom-left"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+                                    almuhtadibillah588@gmail.com</p>
+                                <p class="bottom-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                    +62 82237333054</p>
+                                <p class="bottom-left"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;
+                                    Besuki, Situbondo, Jawa Timur (68356)</p>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="https://web.facebook.com/uchiha.aldis/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/yaelahh_al?t=3VWbUpZbGjMa-g8LM7uwAA&s=03"
+                                                target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://github.com/aldi404" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/aldi_mhtdbllh/" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 align-self-baseline">
+                            <div class="left">
+                                <img class="photo" src="http://localhost:8000/image/alfiun.jpg" alt="">
+                                <h1 class="name">M. Alfian Ferdiansyah</h1>
+                                <p class="web_dev">Mobile & Web Developer</p>
+                                <hr class="divider" />
+                                <br><br>
+                                <p class="bottom-left"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+                                    alfian000000@gmail.com</p>
+                                <p class="bottom-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                    +62 82334976825</p>
+                                <p class="bottom-left"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;
+                                    Sumbersari, Jember, Jawa Timur (68121)</p>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="https://web.facebook.com/uchiha.aldis/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/yaelahh_al?t=3VWbUpZbGjMa-g8LM7uwAA&s=03"
+                                                target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://github.com/aldi404" target="_blank"><i
+                                                    class="fab fa-github"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/aldi_mhtdbllh/" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="responsive">
+                <div class="container px-4 px-lg-5 h-100">
+                    <div class="menuu row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                        <div class="col-lg-6 align-self-baseline">
+                            <div class="d-flex justify-content-center">
+                                <p class="hallo">Halo, We are</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <img class="photo_responsive" src="http://localhost:8000/image/me2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <h1 class="name">Al Muhtadi Billah</h1>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="web_dev">Web Developer</p>
+                            </div>
+                            <hr class="divider-center" />
+                            <br><br>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+                                    almuhtadibillah588@gmail.com</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                    +62 82237333054</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;
+                                    Besuki, Situbondo, Jawa Timur (68356)</p>
+                            </div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="https://web.facebook.com/uchiha.aldis/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/yaelahh_al?t=3VWbUpZbGjMa-g8LM7uwAA&s=03"
+                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/aldi404" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/aldi_mhtdbllh/" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex justify-content-center" style="margin-top: 25%">
+                                <img class="photo_responsive" src="http://localhost:8000/image/alfiun.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <h1 class="name">Moch. Alfian F.</h1>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="web_dev">Mobile & Web Developer</p>
+                            </div>
+                            <hr class="divider-center" />
+                            <br><br>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
+                                    alfian000000@gmail.com</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                    +62 82334976825</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="bottom-left"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;
+                                    Sumbersari, Jember, Jawa Timur (68121)</p>
+                            </div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a href="https://web.facebook.com/uchiha.aldis/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/yaelahh_al?t=3VWbUpZbGjMa-g8LM7uwAA&s=03"
+                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/aldi404" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/aldi_mhtdbllh/" target="_blank"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="web">
+                        <div class="photo-about">
+                            <div class="d-flex justify-content-center">
+                                <img src="http://localhost:8000/image/about.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6" id="web">
+                        <div class="about-me">
+                            <h2>About Us</h2>
+                            <br>
+                            <p style="text-align: justify">Hello, we are web-developer and mobile developer based on
+                                Indonesia. We have
+                                experience in mobile, web site design &
+                                building and customization. Also we are good at:</p>
+                            <div class="about_good_at">
+                                <ul>
+                                    <li>
+                                        <p>php</p>
+                                    </li>
+                                    <li>
+                                        <p>html</p>
+                                    </li>
+                                    <li>
+                                        <p>css</p>
+                                    </li>
+                                    <li>
+                                        <p>javascript</p>
+                                    </li>
+                                    <li>
+                                        <p>Laravel</p>
+                                    </li>
+                                    <li>
+                                        <p>Flutter</p>
+                                    </li>
+                                    <li>
+                                        <p>Firebase</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <a href="http://localhost:8000/cv/cv.pdf" download="cv-al_muhtadi_billah"
+                                class="download-cv btn"><i class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Download CV</a>
+                        </div>
+                    </div>
+                    <div class="col-12" id="responsive">
+                        <div class="photo-about">
+                            <div class="d-flex justify-content-center">
+                                <img src="http://localhost:8000/image/about.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 align-self-center" id="responsive">
+                        <div class="about-me">
+                            <h2>About Me</h2>
+                            <br>
+                            <p>Hello, I'm a Aldi, web-developer based on Indonesia. I have
+                                experience in web site design &
+                                building and customization. Also I am good at:</p>
+                            <div class="responsive_about_good_at">
+                                <ul class="ul_responsive">
+                                    <li>
+                                        <p>php</p>
+                                    </li>
+                                    <li>
+                                        <p>html</p>
+                                    </li>
+                                    <li>
+                                        <p>css</p>
+                                    </li>
+                                    <li>
+                                        <p>javascript</p>
+                                    </li>
+                                    <li>
+                                        <p>Laravel</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <a href="http://localhost:8000/cv/cv.pdf" style="width: 80%;"
+                                download="cv-al_muhtadi_billah" class="download-cv btn"><i
+                                    class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Call to action-->
+        <section class="page-section bg-white" id="projects">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 col-xl-8 mb-5 text-center">
+                        <h2 class="mt-0">Featured Projects</h2>
+                        <hr class="divider2" />
+                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 align-self-center">
+                                        <div class="container__projects_left">
+                                            <img class="projects_images" id="web"
+                                                src="http://localhost:8000/image/portfolio/smartbid.png" alt=""
+                                                srcset="">
+                                            <img class="projects_images"
+                                                style="width: 350px; height: 250px; margin-top: -30%" id="responsive"
+                                                src="http://localhost:8000/image/portfolio/smartbid.png" alt=""
+                                                srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center" id="web">
+                                        <div class="container__projects_right">
+                                            <h5>Web Design & Development</h5>
+                                            <div class="text">
+                                                <h3>SMARTBID - PT ANUGERAH LELANG INDONESIA</h3>
+                                                <p>Smartbid is an automotive auction place that has branches throughout
+                                                    Indonesia.</p>
+                                            </div>
+                                            <a href="https://smartbid.co.id/" target="_blank"
+                                                class="projects_link btn"><i
+                                                    class="fas fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Visit
+                                                Website</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center" id="responsive">
+                                        <div class="container__projects_right_responsive">
+                                            <div class="text">
+                                                <h5>Web Design & Development</h5>
+                                                <h3>SMARTBID - PT ANUGERAH LELANG INDONESIA</h3>
+                                                <p>Smartbid is an automotive auction place that has branches throughout
+                                                    Indonesia.</p>
+                                                <a href="https://smartbid.co.id/" target="_blank"
+                                                    class="projects_link btn" style="width: 80%; margin-top: 3em"><i
+                                                        class="fas fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Visit
+                                                    Website</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 align-self-center">
+                                        <div class="container__projects_left">
+                                            <img class="projects_images" id="web"
+                                                src="http://localhost:8000/image/portfolio/hidroponik.jpeg" alt=""
+                                                srcset="">
+                                            <img class="projects_images"
+                                                style="width: 350px; height: 250px; margin-top: -30%" id="responsive"
+                                                src="http://localhost:8000/image/portfolio/hidroponik.jpeg" alt=""
+                                                srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center" id="web">
+                                        <div class="container__projects_right">
+                                            <h5>Web Design & Development</h5>
+                                            <div class="text">
+                                                <h3>Rumahku Hidroponik Jember</h3>
+                                                <p>Rumahku Hidroponik Jember is a business entity engaged in modern
+                                                    agriculture
+                                                    that was
+                                                    established in 2010.</p>
+                                            </div>
+                                            <a href="https://rumahkuhidroponik.com/" target="_blank"
+                                                class="projects_link btn"><i
+                                                    class="fas fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Visit
+                                                Website</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center" id="responsive">
+                                        <div class="container__projects_right_responsive">
+                                            <div class="text">
+                                                <h5>Web Design & Development</h5>
+                                                <h3>Rumahku Hidroponik Jember</h3>
+                                                <p>Rumahku Hidroponik Jember is a business entity engaged in modern
+                                                    agriculture
+                                                    that was
+                                                    established in 2010.</p>
+                                                <a href="https://rumahkuhidroponik.com/" target="_blank"
+                                                    class="projects_link btn" style="width: 80%; margin-top: 3em"><i
+                                                        class="fas fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;Visit
+                                                    Website</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                style="background-color: #B05B3B !important; margin-left: -100%"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                style="background-color: #B05B3B !important;"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white" id="skills">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="menuu row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-6 align-self-center">
+                        <h3>Technical Skills</h3>
+                        <div class="container__progressbars">
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-php shadow-php">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-php">80%</span>
+                                <p class="progressbar__bottom_text">PHP</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-html shadow-html">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-html">89%</span>
+                                <p class="progressbar__bottom_text">HTML</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-css shadow-css">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-css">89%</span>
+                                <p class="progressbar__bottom_text">CSS</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38" class="progressbar__svg-circle circle-js shadow-js">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-js">75%</span>
+                                <p class="progressbar__bottom_text">JavaScript</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-laravel shadow-laravel">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-laravel">85%</span>
+                                <p class="progressbar__bottom_text">Laravel</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-react shadow-react">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-react">75%</span>
+                                <p class="progressbar__bottom_text">Firebase</p>
+                            </div>
+
+                            <div class="progressbar">
+                                <svg class="progressbar__svg">
+                                    <circle cx="40" cy="40" r="38"
+                                        class="progressbar__svg-circle circle-flutter shadow-flutter">
+                                    </circle>
+                                </svg>
+                                <span class="progressbar__text shadow-flutter">90%</span>
+                                <p class="progressbar__bottom_text">Flutter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <h3>Professional Skills</h3>
+                        <div class="container__progressbars">
+                            <div class="probar" style="min-width: 350px">
+                                <div class="d-flex justify-content-between">
+                                    <p>Communication</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="professional_skills-progress">
+                                    <span class="professional_skills-progressbar" style="width: 85%"></span>
+                                </div>
+                            </div>
+                            <div class="probar" style="min-width: 350px">
+                                <div class="d-flex justify-content-between">
+                                    <p>Team Work</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="professional_skills-progress">
+                                    <span class="professional_skills-progressbar" style="width: 80%"></span>
+                                </div>
+                            </div>
+                            <div class="probar" style="min-width: 350px">
+                                <div class="d-flex justify-content-between">
+                                    <p>Project Management</p>
+                                    <p>78%</p>
+                                </div>
+                                <div class="professional_skills-progress">
+                                    <span class="professional_skills-progressbar" style="width: 78%"></span>
+                                </div>
+                            </div>
+                            <div class="probar" style="min-width: 350px">
+                                <div class="d-flex justify-content-between">
+                                    <p>Creativity</p>
+                                    <p>88%</p>
+                                </div>
+                                <div class="professional_skills-progress">
+                                    <span class="professional_skills-progressbar" style="width: 88%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Recent Portfolio</h2>
+                        <hr class="divider2" />
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div id="web">
+                        <div id="portfolio_image">
+                            <div><img src="http://localhost:8000/image/portfolio/login_bumdes.jpeg" /><a
+                                    href="#lightbox-1">Website
+                                    Bumdes</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/hidroponik.jpeg" /><a
+                                    href="#lightbox-2">Rumahku
+                                    Hidroponik
+                                    Jember</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/duj.jpeg" /><a
+                                    href="#lightbox-3">DUJ</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/elearning.jpeg" /><a
+                                    href="#lightbox-4">E-Learning</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/99bakery.jpeg" /><a
+                                    href="#lightbox-5">99bakery</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/forum_anak.jpeg" /><a
+                                    href="#lightbox-6">Forum Anak</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/chatbot-welcome.png" /><a
+                                    href="#lightbox-7">Chatbot</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/hidroponik2.jpeg" /><a
+                                    href="#lightbox-8">Rumahku
+                                    Hidroponik
+                                    Jember</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/chatbot-chatroom.png" /><a
+                                    href="#lightbox-9">Chatbot</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/pppa.jpeg" /><a
+                                    href="#lightbox-10">PPPA</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/sppk.jpeg" /><a
+                                    href="#lightbox-11">SPPK</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/p2tp2a.jpeg" /><a
+                                    href="#lightbox-12">P2TP2A</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/smartbid.png" /><a
+                                    href="#lightbox-13">SmartBid</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/sppk_login.jpeg" /><a
+                                    href="#lightbox-14">SPPK</a></div>
+                        </div>
+                    </div>
+
+
+                    <div id="responsive">
+                        <div id="portfolio_image" style="height: 100%;">
+                            <div><img src="http://localhost:8000/image/portfolio/login_bumdes.jpeg" /><a
+                                    href="#lightbox-1">Website
+                                    Bumdes</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/hidroponik.jpeg" /><a
+                                    href="#lightbox-2">Rumahku
+                                    Hidroponik
+                                    Jember</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/duj.jpeg" /><a
+                                    href="#lightbox-3">DUJ</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/elearning.jpeg" /><a
+                                    href="#lightbox-4">E-Learning</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/99bakery.jpeg" /><a
+                                    href="#lightbox-5">99bakery</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/forum_anak.jpeg" /><a
+                                    href="#lightbox-6">Forum Anak</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/chatbot-welcome.png" /><a
+                                    href="#lightbox-7">Chatbot</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/hidroponik2.jpeg" /><a
+                                    href="#lightbox-8">Rumahku
+                                    Hidroponik
+                                    Jember</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/chatbot-chatroom.png" /><a
+                                    href="#lightbox-9">Chatbot</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/pppa.jpeg" /><a
+                                    href="#lightbox-10">PPPA</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/sppk.jpeg" /><a
+                                    href="#lightbox-11">SPPK</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/p2tp2a.jpeg" /><a
+                                    href="#lightbox-12">P2TP2A</a></div>
+                            <div><img src="http://localhost:8000/image/portfolio/smartbid.png" /><a
+                                    href="#lightbox-13">SmartBid</a>
+                            </div>
+                            <div><img src="http://localhost:8000/image/portfolio/sppk_login.jpeg" /><a
+                                    href="#lightbox-14">SPPK</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lightbox" id="lightbox-1">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/login_bumdes.jpeg" />
+                        <div class="title">Website for village-owned enterprises, created during KKN.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-2">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/hidroponik.jpeg" />
+                        <div class="title">Rumahku Hidroponik Jember is a business entity engaged in modern agriculture
+                            that
+                            was established in 2010.</div><a class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-3">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/duj.jpeg" />
+                        <div class="title">Develop internal website for DUJ company.</div><a class="close"
+                            href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-4">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/elearning.jpeg" />
+                        <div class="title">Website to help schools during the pandemic, made for personal projects.
+                        </div><a class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-5">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/99bakery.jpeg" />
+                        <div class="title">Internal website for 99bakery jember.</div><a class="close"
+                            href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-6">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/forum_anak.jpeg" />
+                        <div class="title">Website for the Probolinggo city children's forum, created while PKL.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-7">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/chatbot-welcome.png" />
+                        <div class="title">Android based chatbot, made for thesis.</div><a class="close"
+                            href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-8">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/hidroponik2.jpeg" />
+                        <div class="title">Rumahku Hidroponik Jember is a business entity engaged in modern agriculture
+                            that
+                            was established in 2010.</div><a class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-9">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/chatbot-chatroom.png" />
+                        <div class="title">Android based chatbot, made for thesis.</div><a class="close"
+                            href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-10">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/pppa.jpeg" />
+                        <div class="title">Website for the Probolinggo city PPPA, created while PKL.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-11">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/sppk.jpeg" />
+                        <div class="title">Website for decision support system, made for personal project.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-12">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/p2tp2a.jpeg" />
+                        <div class="title">Website for the Probolinggo city P2TP2A, created while PKL.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-13">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/smartbid.png" />
+                        <div class="title">Smartbid is an automotive auction place that has branches throughout
+                            Indonesia.</div>
+                        <a class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+                <div class="lightbox" id="lightbox-14">
+                    <div class="content"><img src="http://localhost:8000/image/portfolio/sppk_login.jpeg" />
+                        <div class="title">Website for decision support system, made for personal project.</div><a
+                            class="close" href="#portfolio_image"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Masthead-->
+
+        <!-- Footer-->
+        <footer class="bg-dark text-white py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">All right reserved || Al Muhtadi Billah & Moch. Alfian F @
+                    2023</div>
+            </div>
+        </footer>
+
+
+    </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+    <!-- Bootstrap core JS-->
+
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="http://localhost:8000/main_temp/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script>
+        $("#carousel-slider").slick({
+            arrows: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            mobileFirst: true
+        });
+    </script>
+    <!-- Calling jQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Calling Slick Library -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>

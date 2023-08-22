@@ -66,9 +66,6 @@
             </div>
         </div>
     </div>
-</header>
-
-<header class="masthead">
     <div id="responsive">
         <div class="container px-4 px-lg-5 h-100">
             <div class="menuu row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
